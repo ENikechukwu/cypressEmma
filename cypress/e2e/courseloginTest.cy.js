@@ -18,7 +18,7 @@ describe("This test is to validate login scenarios into the quales app", () => {
       cy.get('[data-testid="online"]').click();
       cy.get('[data-testid="CourseURL*(mustbeyoutube)"]').type("https://www.youtube.com/watch?v=8vXoMqWgbQQ");
       cy.get('.css-tzsjye > .MuiButton-root').click();
-      cy.contains('Cypress practice Nik');
+      cy.contains('Cypress practice Nik').should("be.visible");
 
 
       
